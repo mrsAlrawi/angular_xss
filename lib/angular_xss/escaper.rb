@@ -23,7 +23,7 @@ module AngularXss
       if disabled?
         string
       else
-        string.gsub('{{', ' { { ')
+        string.gsub('{{', '{{DOUBLE_LEFT_CURLY_BRACE}}')
       end
     end
 
